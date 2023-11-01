@@ -1,0 +1,85 @@
+@font-face {
+    /* font-family: 'Timmana-Regular';
+    src: url("./assets/fonts/Timmana-Regular.ttf"); */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    /* font-family: 'Timmana-Regular'; */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+   background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%), url('./assets/img/background_img.jpg');
+     min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+picture,
+.container,
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.6;
+}
+.container{
+    margin: 10vh auto;
+}
+.btn{
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+}
+.play{
+    background-image: url('./assets/svg/play.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pause{
+    background-image: url('./assets/svg/pause.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    width: inherit;
+    height: inherit;
+}
+.picture{
+    width: 30vw;
+    height: 30vh;
+}
+.player{
+    position: absolute;
+    z-index: 1;
+    gap: 30px;
+    border-radius: 2em;
+    width: 35vw;
+    height: 80vh;
+    background-color: rgb(155, 203, 245);
+}
+.button_block,
+.button_nav{
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
+}
