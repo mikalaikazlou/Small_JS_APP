@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <title>Hangman</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="modal result">
+            <div class="content_modal">
+                <div class="result_game text_decoration"></div>
+                <div class="action_btn">
+                    <div class="btn restart text_decoration">Play again</div>
+                </div>
+            </div>
+        </div>
+        <div class="block_languages">
+            <select class="lang_choose">
+                <option value="eng">Eng</option>
+                <option value="ru">Рус</option>
+            </select>
+        </div>
+        <div class="left_block">
+            <div class="game_name">Hangman game</div>
+            <div class="hangman">
+                <svg class="hangman_figure">
+                    <line x1="10" y1="270" x2="250" y2="270" class="part_figure"></line>
+                    <line x1="50" y1="270" x2="50" y2="20" class="part_figure"></line>
+                    <line x1="50" y1="40" x2="70" y2="20" class="part_figure"></line>
+                    <line x1="50" y1="20" x2="170" y2="20" class="part_figure"></line>
+                    <line x1="170" y1="20" x2="170" y2="60" class="part_figure"></line>
+                    <!-- head -->
+                    <circle cx="170" cy="80" r="20" class="part_figure part_man "></circle>
+                    <!-- body -->
+                    <line x1="170" y1="100" x2="170" y2="160" class="part_figure part_man"></line>
+                    <!-- arm left -->
+                    <line x1="170" y1="100" x2="140" y2="140" class="part_figure part_man"></line>
+                    <!-- arm rigth -->
+                    <line x1="170" y1="100" x2="200" y2="140" class="part_figure part_man"></line>
+                    <!-- leg left -->
+                    <line x1="170" y1="160" x2="140" y2="200" class="part_figure part_man"></line>
+                    <!-- leg rigth -->
+                    <line x1="170" y1="160" x2="200" y2="200" class="part_figure part_man"></line>
+                </svg>
+            </div>
+        </div>
+        <div class="rigth_block">
+            <div class="question_word block"></div>
+            <div class="btn_a block">
+                <div class="counter">0</div>
+            </div>
+            <div class="question block"></div>
+            <div class="block_keyboard block"></div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
