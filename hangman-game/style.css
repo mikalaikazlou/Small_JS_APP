@@ -1,0 +1,318 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5vw;
+}
+
+body {
+  display: flex;
+  background-color: #655cc8;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block,
+.btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.left_block,
+.rigth_block {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.block {
+  text-align: center;
+  padding: 10px;
+}
+
+.action_btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+
+.btn {
+  height: 10px;
+  width: 6em;
+  padding: 10px;
+  /* margin: 5px; */
+  border-radius: 10px;
+  background-color: #655cc8;
+  color: white;
+  cursor: pointer;
+}
+
+.text_decoration {
+  font-weight: 900;
+  font-size: 1.1em;
+  text-shadow: 0px 0px 9px black;
+}
+
+.text_upper {
+  display: inline;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.game_name {
+  letter-spacing: 2px;
+  font-weight: 900;
+  /* text-decoration: underline; */
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.part_man {
+  display: none;
+}
+
+.red_text {
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: red;
+}
+
+.result_game.text_decoration {
+  text-shadow: 0px 0px 2px #070707;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.keyboard_char {
+  display: flex;
+  height: 20px;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  border: solid #dcdfde 2px;
+  border-radius: 25%;
+  cursor: pointer;
+  color: white;
+  background-color: #655cc8;
+}
+
+.keyboard_char:hover {
+  background-color: #aca8e5;
+  color: #1f1f1f;
+}
+
+.question_word {
+  display: flex;
+  gap: 1em;
+}
+
+.chars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7vw;
+  height: 6.5vh;
+  border: solid green 1px;
+}
+
+.green_color {
+  color: green;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.content_modal {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  background-color: white;
+  gap: 1em;
+  opacity: 0.9;
+  width: 60%;
+  /* height: 50%; */
+  border-radius: 4.5vh;
+}
+
+.result_game {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.show_part {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  max-width: 70vw;
+  /* max-height: 70vh; */
+  position: relative;
+  align-items: center;
+  background-color: white;
+  border-radius: 1em;
+  /* padding: 20px; */
+  overflow-x: hidden;
+}
+
+
+.block_languages {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.hangman {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  /* background-color: bisque; */
+}
+
+.hangman_figure {
+  stroke: red;
+  fill: transparent;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  height: 100%;
+}
+
+.counter {
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+.left_block {
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    flex-direction: column;
+    overflow-y: scroll;
+    max-width: 80vw;
+  }
+
+  .left_block,
+  .rigth_block {
+    width: 100%;
+  }
+
+  .hangman {
+    width: 220px;
+    height: 120px;
+  }
+
+  .hangman_figure {
+    stroke-width: 3px;
+  }
+
+  .block {
+    padding: 7px 0px 0px 0px;
+  }
+
+  .result_game {
+    font-size: 18px;
+  }
+
+  .action_btn {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_modal {
+    width: 60vw;
+    padding: 10px 0px;
+  }
+
+  .keyboard {
+    gap: 0px;
+    padding: auto;
+    border-radius: 0px;
+  }
+
+  .keyboard_char {
+    height: 15px;
+    width: 22px;
+  }
+
+  .block {
+    padding: 5px 0px 0px 0px;
+  }
+
+  .question_word {
+    gap: 3px;
+  }
+
+  .hangman {
+    width: 200px;
+  }
+
+  .block_languages {
+    display: flex;
+    position: static;
+    margin-bottom: 5px;
+  }
+
+  select {
+    display: flex;
+  }
+
+  .container {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    padding: 0 auto;
+  }
+
+  .container {
+    max-width: 95vw;
+  }
+}
