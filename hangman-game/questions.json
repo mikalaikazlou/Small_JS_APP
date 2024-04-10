@@ -1,0 +1,72 @@
+[
+    {
+    "id": 1,
+    "wordRu": "Норвегия",
+    "questionRu": "Территоря какой страны является архипелаг 'Шпицберген'?",
+    "wordEng": "Norway",
+    "questionEng": "Which country's territory is the Svalbard archipelago?"
+},
+{
+    "id": 2,
+    "wordRu": "Нил",
+    "questionRu": "Самая длинная река в мире?",
+    "wordEng": "Nile",
+    "questionEng": "Name the longest river in the world?"
+},
+{
+    "id": 3,
+    "wordRu": "Бэнкси",
+    "questionRu": "Кто из известных художников-граффити родом из Бристоля?",
+    "wordEng": "Banksy",
+    "questionEng": "Which famous graffiti artist comes from Bristol?"
+},
+{
+    "id": 4,
+    "wordRu": "Эдисон",
+    "questionRu": "Кто изобрел электрическую лампочку?",
+    "wordEng": "Edison",
+    "questionEng": "Who invented the lightbulb?"
+},
+{
+    "id": 5,
+    "wordRu": "Афины",
+    "questionRu": "Где были проведены первые современные Олимпийские игры?",
+    "wordEng": "Athens",
+    "questionEng": "Where was the first modern Olympic Games held?"
+},
+{
+    "id": 6,
+    "wordRu": "Боинг",
+    "questionRu": "Один из крупнейших в мире производителей самолетов?",
+    "wordEng": "Boeing",
+    "questionEng": "One of the world's largest aircraft manufacturers?"
+},
+{
+    "id": 7,
+    "wordRu": "Мед",
+    "questionRu": "Какая единственная съедобная пища, которая никогда не портится?",
+    "wordEng": "Honey",
+    "questionEng": "Which is the only edible food that never goes bad?"
+},
+{
+    "id": 8,
+    "wordRu": "Китай",
+    "questionRu": "В какой стране изобрели мороженое?",
+    "wordEng": "China",
+    "questionEng": "Which country invented ice cream?"
+},
+{
+    "id": 9,
+    "wordRu": "Мехико",
+    "questionRu": "Какой город является столицей Мексики?",
+    "wordEng": "Mexico",
+    "questionEng": "What is the capital city of Mexico?"
+},
+{
+    "id": 10,
+    "wordRu": "Эльбрус",
+    "questionRu": "Гора из списока высочайших вершин частей света «Семь вершин»?",
+    "wordEng": "Elbrus",
+    "questionEng": "A mountain from the list of the highest peaks of the parts of the world 'Seven Peaks'?"
+}
+]
