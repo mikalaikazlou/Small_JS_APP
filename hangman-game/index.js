@@ -147,7 +147,6 @@ const question = document.querySelector(".question");
 const modal = document.querySelector(".modal");
 const result_game = document.querySelector(".result_game");
 const btn_restart = document.querySelector(".restart");
-let mediaQuery = window.matchMedia('(width < 850px)');
 
 /*********************************************************************************************** */
 /*********************************************************************************** listeners **/
@@ -183,16 +182,6 @@ btn_restart.addEventListener("click", () => {
     hiddenMan();
 });
 
-changeFigure(mediaQuery);
-mediaQuery.addListener(changeFigure);
-
-function changeFigure(mediaQuery) {
-    if (mediaQuery.matches) {
-        updateSizesOfFigureSvg(coordinateSmallFigure);
-    } else {
-        updateSizesOfFigureSvg(coordinateFigure);
-    }
-}
 /************************************* */
 /************************************* */
 
@@ -398,7 +387,7 @@ function finishGame(isWin) {
 }
 
 function removeSvgFigure() {
-    let elem = document.querySelector("svg.hangman_figure");
+    let elem = document.querySelector("div.hangman_figure");
     if (elem) {
         elem.remove();
     }
@@ -416,23 +405,6 @@ function hiddenMan() {
     })
 }
 
-function updateSizesOfFigureSvg(coordFigure) {
-    const elements = document.querySelectorAll(".part_figure");
-    let X = 0;
-    for (const iterator of elements) {
-        if (X === 5) {
-            iterator.setAttribute("cx", coordFigure[X][0]);
-            iterator.setAttribute("cy", coordFigure[X][1]);
-            iterator.setAttribute("r", coordFigure[X][2]);
-        } else {
-            iterator.setAttribute("x1", coordFigure[X][0]);
-            iterator.setAttribute("y1", coordFigure[X][1]);
-            iterator.setAttribute("x2", coordFigure[X][2]);
-            iterator.setAttribute("y2", coordFigure[X][3]);
-        }
-        X++;
-    }
-}
 /************************************* */
 /************************************* */
 
